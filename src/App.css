@@ -1,0 +1,456 @@
+body {
+  margin: 0;
+}
+*{
+  background-color: #0d1224;
+  
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/* this is navbar section */
+.navbar{
+  background-color: #0d1224;
+}
+.navbar .nav-link {
+  color: white;
+  margin-right: 2rem;
+  font-size: 1rem;
+}
+.navbar .navbar-brand {
+  color: #16f2b3;
+ /* Make the text bold */
+  font-size: 2rem; /* Increase the font size */
+}
+.navbar .navbar-brand:hover{
+  color: #16f2b3;
+ /* Make the text bold */
+  font-size: 2rem; /* Increase the font size */
+  
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #ed64a6; /* Link text color on hover and focus */
+}
+
+.navbar .nav-link.active{
+  color: white !important; /* Active link color */
+}
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+	outline: none;
+    box-shadow: none;
+}
+nav.navbar .navbar-toggler-icon {
+  width: 24px;
+  height: 17px;
+  background-image: none;
+  position: relative;
+  border-bottom: 2px solid #fff;
+  transition: all 300ms linear;
+  top: -2px;
+}
+
+nav.navbar .navbar-toggler-icon:focus {
+	border-bottom: 2px solid #fff;
+}
+nav.navbar .navbar-toggler-icon:after,
+nav.navbar .navbar-toggler-icon:before {
+	width: 24px;
+	position: absolute;
+	height: 2px;
+	background-color: #fff;
+	top: 0;
+	left: 0;
+	content: '';
+	z-index: 2;
+	transition: all 300ms linear;
+}
+nav.navbar .navbar-toggler-icon:after {
+	top: 8px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+	transform: rotate(45deg);
+	background-color: #fff;
+	height: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+	transform: translateY(8px) rotate(-45deg);
+	background-color: #fff;
+	height: 2px;
+}
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+	border-color: transparent;
+}
+
+/* This is heroSection css */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Full viewport height */
+  text-align: center;
+  padding: 2rem; /* Padding around content */
+}
+
+.hero-text {
+  font-size: 2rem; /* Adjust font size as needed */
+  line-height: 1.2;
+  color: white;
+  margin-bottom: 2rem; /* Space below text */
+}
+
+.hero-text-lg {
+  font-size: 3rem; /* Larger text for larger screens */
+}
+
+.hero-name {
+  color: #ed64a6; /* Accent color */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between social icons */
+  margin-bottom: 2rem; /* Space below social icons */
+}
+.social-icons a{
+  color: #ed64a6;
+}
+.social-icons a:hover{
+  transform: scale(1.2);
+  color: #16f2b3;;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Space between buttons */
+}
+
+.contact-button, .resume-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* Increased gap for better spacing */
+  padding: 0.75rem 2rem;
+  font-size: 0.875rem;
+  font-weight: 500; /* Medium weight */
+  text-transform: uppercase;
+  border-radius: 9999px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact-button{
+  background: linear-gradient(to right, #d946ef, #7e22ce);
+}
+
+.resume-button{
+  background: linear-gradient(to right, #6ee7b7, #3b82f6);
+}
+
+
+
+ .resume-button:hover {
+  background: linear-gradient(to right, #d946ef, #7e22ce); /* Maintain gradient color */
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+.contact-button:hover{
+  background:  linear-gradient(to right, #6ee7b7, #3b82f6);
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.contact-button:active, .resume-button:active {
+  transform: translateY(1px); /* Slight depression effect on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+}
+
+.contact-button svg, .resume-button svg {
+  transition: color 0.3s; /* Smooth icon color transition */
+  color: inherit; /* Inherit color from button text */
+  background:none;
+}
+
+/* about me section */
+.about-container {
+  text-align: center; /* Center text horizontally */
+  padding-left: 2rem; /* Add padding around the section */
+  padding-right: 2rem;
+  color: #ffffff; /* White text color for readability */
+}
+
+.section-heading {
+  background-color: #1a1443; /* Dark background color */
+  color: #ffffff; /* White text color for contrast */
+  padding: 1rem 2rem; /* Generous padding for button-like appearance */
+  border-radius: 8px; /* Rounded corners for a button-like effect */
+  display: inline-block; /* Shrink to fit content width */
+  font-size: 2rem; /* Larger font size for prominence */
+  font-weight: 700; /* Bold text */
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  
+  margin: 0 auto; /* Center horizontally */
+  text-align: center; /* Center text within the heading */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition effects */
+}
+
+.section-heading:hover {
+  background-color: #1a1443; /* Change background color on hover */
+  color: #ffffff; /* Change text color on hover for contrast */
+}
+
+.about-box {
+  
+  border-radius: 8px; /* Rounded corners for the box */
+  padding: 2rem; /* Padding inside the box */
+  margin-top: 2rem; /* Space above the box */
+  max-width: 90%; /* Limit the width of the box */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+}
+
+.sub-heading {
+  color: #16f2b3; /* Color for the sub-heading */
+  font-size: 1.5rem; /* Font size for the sub-heading */
+  font-weight: 700; /* Bold text */
+  margin-bottom: 1rem; /* Space below the sub-heading */
+}
+
+.description {
+  color: #ffffff; /* White text color */
+  font-size: 1rem; /* Font size for the description */
+  line-height: 1.6; /* Line height for readability */
+  margin: 0; /* Remove default margin */
+}
+
+/* Skills section */
+
+.skills-container{
+  text-align: center; /* Center text horizontally */
+  padding-left: 2rem; /* Add padding around the section */
+  padding-right: 2rem;
+  padding-top: 2rem;
+  color: #ffffff; /* White text color for readability */
+}
+
+.skills-grid {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.skill-button {
+  background: linear-gradient(45deg, #16f2b3, #7e22ce);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skill-button:hover {
+  background: linear-gradient(45deg, #7e22ce, #16f2b3);
+  transform: scale(1.05);
+}
+
+/* projects section */
+
+.projects-container{
+  text-align: center; /* Center text horizontally */
+  padding-left: 2rem; /* Add padding around the section */
+  padding-right: 2rem;
+  padding-top: 3rem;
+  color: #ffffff; /* White text color for readability */
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.project-card {
+  border: 2px solid #16f2b3;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+  background-color: #0d1224;
+}
+
+.project-card:hover {
+  border-color: #7e22ce;
+  transform: scale(1.03);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #16f2b3;
+}
+
+.project-description {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.project-details {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  color: #ddd;
+}
+
+.project-details span {
+  display: block;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.project-link {
+  background: linear-gradient(45deg, #16f2b3, #7e22ce);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.project-link:hover {
+  background: linear-gradient(45deg, #7e22ce, #16f2b3);
+  transform: scale(1.05);
+}
+
+.more-projects-link {
+  display: inline-block;
+  background: linear-gradient(45deg, #16f2b3, #7e22ce);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.more-projects-link:hover {
+  background: linear-gradient(45deg, #7e22ce, #16f2b3);
+  transform: scale(1.05);
+}
+
+
+/* Education Sextion */
+
+.education-container{
+  text-align: center; /* Center text horizontally */
+  padding-left: 2rem; /* Add padding around the section */
+  padding-right: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #ffffff; /* White text color for readability */
+}
+
+
+.education-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.education-card {
+  border: 2px solid #16f2b3;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 350px;
+  background-color: #0d1224;
+}
+
+.education-card:hover {
+  border-color: #7e22ce;
+  transform: scale(1.03);
+}
+
+.education-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #16f2b3;
+  margin-bottom: 0.5rem;
+}
+
+.education-duration,
+.education-institution,
+.education-grade {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer section */
+.footer-container {
+  color: #ddd;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 2px solid; /* Gradient border applied here */
+  border-image: linear-gradient(to right, #16f2b3, #7e22ce, #d946ef); /* Gradient line */
+  border-image-slice: 1;
+}
+
+.footer-content p {
+  margin: 0.5rem 0;
+}
+
+.footer-content .email {
+  color: #16f2b3;
+}
+
+.footer-social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.footer-social-icons a {
+  color: slategray;
+  transition: transform 0.3s;
+}
+
+.footer-social-icons a:hover {
+  color: #16f2b3;
+  transform: scale(1.2);
+}
+
+
+
+
